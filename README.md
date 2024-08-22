@@ -5,6 +5,26 @@
 
 <h3>Demo Link of the Project</h3><link>https://drive.google.com/file/d/1rzUddecTf_ycWCmiovsetDyzNLxu6wsM/view?usp=drive_link</link>
 
+<h1>Project Deliverables</h1>
+
+<p>I have successfully completed all the required deliverables for the Project Management Dashboard application, except for the following tasks:</p>
+
+<ul>
+    <li>The application should allow users to create, manage, and track projects and tasks within those projects.</li>
+    <li>Set up WebSocket (e.g., Socket.io) to enable real-time communication between the backend and frontend.</li>
+    <li>Use a database like MongoDB (with Mongoose) or PostgreSQL (with Sequelize or TypeORM) to store user, project, and task data.</li>
+    <li>Implement a secure authentication system using JWT.</li>
+    <li>Hash passwords using bcrypt or a similar library before storing them in the database.</li>
+    <li>Use a state management library Zustand for managing the application state.</li>
+    <li>Implement drag-and-drop functionality to change the status of tasks (e.g., "To Do," "In Progress," "Done").</li>
+    <li>Protect routes based on user roles (e.g., Admin, User).</li>
+    <li>Set up and run the backend and frontend locally.</li>
+</ul>
+
+<p>In addition, I have completed the bonus task of implementing file uploads to an AWS S3 bucket, allowing users to upload files (e.g., images, documents) related to tasks.</p>
+
+</body>
+</html>
 <h2>Setup Instructions</h2>
 
 <h3>Prerequisites</h3>
