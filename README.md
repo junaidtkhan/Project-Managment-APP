@@ -3,6 +3,8 @@
 
 <p>A full-stack project management dashboard application built with React.js, Node.js, Express, and MongoDB. The application allows users to create, manage, and track projects and tasks with real-time updates, file uploads, and role-based authentication.</p>
 
+<h3>Demo Link of the Project</h3><link>https://drive.google.com/file/d/1rzUddecTf_ycWCmiovsetDyzNLxu6wsM/view?usp=drive_link</link>
+
 <h2>Setup Instructions</h2>
 
 <h3>Prerequisites</h3>
