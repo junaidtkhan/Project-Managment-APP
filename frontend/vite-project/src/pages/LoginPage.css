@@ -1,0 +1,16 @@
+.Login-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #232323;
+	color: aliceblue;
+}
+
+.Login-container>form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
