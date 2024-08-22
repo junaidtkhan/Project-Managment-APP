@@ -7,7 +7,7 @@
 
 <h1>Project Deliverables</h1>
 
-<p>I have successfully completed all the required deliverables for the Project Management Dashboard application:</p>
+<h5>I have successfully completed all the required deliverables for the Project Management Dashboard application:</h5>
 
 <ul>
     <li>The application should allow users to create, manage, and track projects and tasks within those projects.</li>
