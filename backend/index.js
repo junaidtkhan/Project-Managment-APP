@@ -32,30 +32,21 @@ const io = new Server(server, {
 // Handle socket connection
 io.on('connection', (socket) => {
 	console.log('A user connected');
-	
-	// // Example: Emit an event to update clients in real-time
-	// socket.on('updateProjects', (data) => {
-		// 	// Broadcast the updated project to all connected clients
-		// 	io.emit('projectUpdated', data);
-		// });
-		
-		socket.on('disconnect', () => {
-			console.log('User disconnected');
-		});
+	socket.on('disconnect', () => {
+		console.log('User disconnected');
 	});
-	const socketRouterProject = require('./routes/project')(io)
-	const socketRouterTask = require('./routes/task')(io)
-	
-	app.use('/auth', authRouter);
-	app.use('/project', socketRouterProject);
-	app.use('/task', socketRouterTask);
-	
+});
+const socketRouterProject = require('./routes/project')(io)
+const socketRouterTask = require('./routes/task')(io)
+
+app.use('/auth', authRouter);
+app.use('/project', socketRouterProject);
+app.use('/task', socketRouterTask);
+
 // const
 
 server.listen(port, () => {
 	// console.log('Server is running on port 5000');
 	console.log(`Example app listening at http://localhost:${port}`);
 });
-// app.listen(port, () => {
-// })
 

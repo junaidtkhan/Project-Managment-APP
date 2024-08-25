@@ -19,7 +19,6 @@ const Task = ({ taskId, projectId }) => {
 						},
 					}
 				);
-
 				
 				setName(response.data.name);
 				setDescription(response.data.description);

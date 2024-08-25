@@ -86,7 +86,6 @@ const ProjectCard = ({ project }) => {
 							onChange={(e) => setDescription(e.target.value)}
 						/>
 						<input type="file" id="file" name="file" onChange={handleFileChange} />
-						{/* <label htmlfor="file" className='task_submit add-project-btn'>Upload</label> */}
 						<button type="submit">Update</button>
 						<button onClick={() => {
 							setEditing(false)
@@ -101,8 +100,6 @@ const ProjectCard = ({ project }) => {
 							? project.files.length
 							: "No files uploaded"
 					}</span>
-					{/* {show project id} */}
-					{/* move the id to float right */}
 					<span className="project_id">ID: {project._id}</span>
 
 

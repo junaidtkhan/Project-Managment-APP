@@ -12,7 +12,6 @@ const CreateProject = ({ projectId }) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			// const token = localStorage.getItem('token');
 			const response = await axios.post(`http://localhost:3000/task/${projectId}/tasks`, { name, description },
 				{
 					headers: {

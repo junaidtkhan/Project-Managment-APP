@@ -65,11 +65,8 @@ const TaskList = ({ projectId }) => {
   }, [socket]);
 
   const handleDelete = (taskId) => {
-    // const newTasks = tasks.filter((task, index) => index !== taskIndex);
-    // setTasks(newTasks);
-
+   
     try {
-      // const token = localStorage.getItem("token");
       axios.delete(`http://localhost:3000/task/${projectId}/tasks/${taskId}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,

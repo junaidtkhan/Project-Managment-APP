@@ -33,7 +33,7 @@ const AddProject = ({ onClose }) => {
 				const fileType = file.type;
 
 				console.log('Uploading file:', fileName, fileType);
-				await UploadFile(file,fileName, fileType, response.data._id)
+				await UploadFile(file, fileName, fileType, response.data._id)
 
 			}
 		} catch (error) {
@@ -45,19 +45,6 @@ const AddProject = ({ onClose }) => {
 		onClose()
 	};
 
-	// useEffect(() => {
-	// 	socket.on('updateProjects', (UpdatedProject) => {
-
-	// 		setProjects([...projects, UpdatedProject]);
-	// 		projects = useStore.getState().projects
-	// 		console.log("All projects are updated")
-
-	// 	});
-
-	// 	return () => {
-	// 		socket.off('projectUpdated');
-	// 	};
-	// }, [socket]);
 	const handleFileChange = (e) => {
 		setFile(e.target.files[0]);
 	}

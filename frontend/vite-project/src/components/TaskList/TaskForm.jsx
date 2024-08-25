@@ -29,7 +29,6 @@ const TaskForm = ({ projectId }) => {
     e.preventDefault();
 
     try {
-      // const token = localStorage.getItem("token");
       const response = axios.post(
         `http://localhost:3000/task/${projectId}/tasks`,
         taskData,
@@ -39,9 +38,6 @@ const TaskForm = ({ projectId }) => {
           },
         }
       )
-      // addTask(taskData);
-      // console.log("Task created");
-
     }
     catch (error) {
       console.error("Error creating task", error);

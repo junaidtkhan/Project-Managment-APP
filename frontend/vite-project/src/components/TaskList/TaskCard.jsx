@@ -4,7 +4,6 @@ import "./TaskCard.css";
 import deleteIcon from "../../assets/delete.png";
 
 const TaskCard = ({ index, title, handleDelete, taskId, setActiveCard }) => {
-    // console.log(index);
     return (
         <article className='task_card' draggable="true" onDragStart={()=>setActiveCard(taskId)} onDragEnd={()=>setActiveCard(null)}>
             <p className='task_text'>{title}</p>

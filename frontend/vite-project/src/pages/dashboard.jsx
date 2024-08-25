@@ -11,7 +11,6 @@ import useStore from '../store';
 
 import io from 'socket.io-client';
 const socket = io('http://localhost:3000');
-// var projects = []
 
 const Dashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +18,7 @@ const Dashboard = () => {
   const { user, setUser, setProjects, setSocket } = useStore();
   var projects = useStore.getState().projects
 
-  // setSocket(socket)
-  // console.log("Type of socket is: ") 
-  //   console.log(typeof socket)
+
 
   useEffect(() => {
 
@@ -54,7 +51,6 @@ const Dashboard = () => {
   const navigate = useNavigate()
 
   const handleLogOut = () => {
-    // localStorage.removeItem('token');
     setUser({});
     navigate('/login', { replace: true });
   }
