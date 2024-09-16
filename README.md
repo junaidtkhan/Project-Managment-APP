@@ -1,4 +1,3 @@
-
 <h1>Project Management Dashboard</h1>
 
 <p>A full-stack project management dashboard application built with React.js, Node.js, Express, and MongoDB. The application allows users to create, manage, and track projects and tasks with real-time updates, file uploads, and role-based authentication.</p>
@@ -37,7 +36,7 @@
 <h3>Backend Setup</h3>
 <ol>
     <li>Clone the repository:
-        <pre><code>git clone &lt;repository-url&gt;</code></pre>
+        <pre><code>git clone <repository-url></code></pre>
     </li>
     <li>Navigate to the backend directory:
         <pre><code>cd project-management-dashboard/backend</code></pre>
